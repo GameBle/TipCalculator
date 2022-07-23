@@ -64,8 +64,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateTipDescription(tipPercent: Int) {
         val tipDescription = when(tipPercent) {
-            in 0..9 -> "Poor"
-            in 10..14 -> "Acceptable"
+            in 0..8 -> "Poor"
+            in 9..14 -> "Acceptable"
             in 15..19 -> "Good"
             in 20..24 -> "Great"
             else -> "Amazing"
